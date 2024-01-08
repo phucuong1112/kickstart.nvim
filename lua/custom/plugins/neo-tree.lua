@@ -10,7 +10,7 @@ brew tap homebrew/cask-fonts && brew install --cask font-hack-nerd-font
 --]]
 return {
   {
-    "nvim-neo- ree/neo-tree.nvim",
+    "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -19,7 +19,6 @@ return {
     },
     config = function()
       vim.keymap.set('n', '/', ':Neotree filesystem reveal left<CR>');
-      vim.keymap.set('n', '<C-/>', ':Neotree close<CR>');
     end
   }
 }
